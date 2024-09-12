@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Dog Chatbot</title>
+</head>
+<body>
+    <h1>Dog Chatbot</h1>
+    <p>Q: {{ question }}</p>
+    <p>A: {{ answer }}</p>
+    <a href="/">Ask another question</a>
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dog Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #chatbot-container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #chatbot-container h1 {
+            text-align: center;
+        }
+        #chatbot-container p {
+            margin-bottom: 20px;
+        }
+        #chatbot-container a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbot-container">
+        <h1>Dog Chatbot</h1>
+        <p>Q: {{ question }}</p>
+        <p>A: {{ answer }}</p>
+        <a href="/">Ask another question</a>
+    </div>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Dog Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #chatbot-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #chatbot-container h1 {
+            text-align: center;
+        }
+
+        #sidebar {
+            width: 30%;
+            float: left;
+            padding: 20px;
+        }
+
+        #chat-window {
+            width: 70%;
+            float: right;
+            padding: 20px;
+        }
+
+        #chat-window .question {
+            color: #007bff;
+        }
+
+        #chat-window .answer {
+            color: #4CAF50;
+        }
+
+        #chat-form {
+            margin-top: 20px;
+        }
+
+        #chat-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #chat-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbot-container">
+        <h1>Dog Chatbot</h1>
+        <div id="chat-window">
+            {% if question %}
+                <p class="question">Q: {{ question }}</p>
+                <p class="answer">A: {{ answer }}</p>
+            {% endif %}
+            <form id="chat-form" action="/chatbot" method="post">
+                <input type="text" name="question" placeholder="Ask me a question about dogs!" required>
+                <button type="submit">Ask</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html> -->
