@@ -11,7 +11,6 @@ df = pd.DataFrame({
 st.title("Dog Chatbot")
 st.write("Ask me a question about dogs!")
 
-
 # Display questions as instructions in the sidebar
 st.sidebar.title("Try asking me these questions:")
 for i, row in df.iterrows():
@@ -45,7 +44,7 @@ if user_input := st.chat_input("What is up?"):
         answer= df.loc[df["question"].str.lower() == user_input.lower(), "answer"].values[0]
 
     except IndexError:
-        answer = "I couldn't find an answer to that question. Please try asking something the list."
+        answer = "I couldn't find an answer to that question. Please try asking something from the list."
 
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
